@@ -1,0 +1,30 @@
+.clients-section {
+    padding: 94px 0 94px;
+}
+
+.clients-section__list {
+    display: flex;
+    justify-content: center;
+}
+
+.clients-section__item {
+    border: #AFB1B8 solid 1px;
+    margin-top: 50px;
+    border-radius: 4px;
+}
+
+.clients-section__item:focus-within {
+    border-color: #2196f3;
+}
+
+.clients-section__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.clients-section__item:hover {
+    border-color: #2196F3;
+}
+
+.clients-section__link {
+    display: block;
+}

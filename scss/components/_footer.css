@@ -1,0 +1,128 @@
+.footer-socials-icon {
+    margin: 12px;
+    width: 20px;
+    height: 20px;
+    fill: #fff;
+}
+.footer {
+    padding: 60px 0;
+    background-color: var(--hero-section-background);
+}
+
+.footer-inner {
+    display: flex;
+    /* align-items: center; */
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.footer__contact {
+    color: var(--footer__contact-color);
+    font-size: 14px;
+    line-height: 1.71;
+    font-style: normal;
+    letter-spacing: calc(1em / 33);
+}
+
+.footer__contact--map {
+    color: var(--white-color);
+}
+
+.footer__contact--mail {
+    margin-top: 9px;
+}
+
+.footer__contact--phone {
+    margin-top: 9px;
+}
+
+.footer__leftpart {
+    /* width: 231px; */
+}
+
+.footer__rightpart {
+    margin-top: 12px;
+    margin-left: 70px;
+}
+
+.footer__socials-header {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.footer__socials-list {
+    display: flex;
+    padding-top: 20px;
+}
+
+.footer__socials-item {
+    border-radius: 50px;
+    height: 44px;
+    width: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer__socials-item:focus-within {
+    background-color: #2196F3;
+}
+
+.footer__socials-item:hover {
+    background-color: #2196F3;
+}
+
+.footer__socials-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.footer-socials-link {
+    display: block;
+    height: inherit;
+    width: inherit;
+}
+.bottom-form {
+    margin: 12px 0 0 93px;
+}
+
+.subscribe-form {
+    display: flex;
+    margin-top: 20px;
+}
+
+.subscribe-form__input {
+    width: 358px;
+    height: 50px;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.3),
+        0px 4px 4px rgba(0, 0, 0, 0.15);
+    background-color: rgba(0, 0, 0, 0);
+    border: solid 0px;
+    border-radius: 4px;
+    padding-left: 16px;
+    padding-right: 16px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe-form__button {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    color: #fff;
+    background-color: var(--hover-blue-color);
+    padding: 0px 29px;
+    height: 50px;
+    border-radius: 4px;
+    border: solid 0px;
+    margin-left: 12px;
+}
+
+.subscribe-form__icon {
+    margin-left: 10px;
+    height: 24px;
+    width: 24px;
+}

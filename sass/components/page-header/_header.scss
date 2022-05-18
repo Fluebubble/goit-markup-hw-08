@@ -1,0 +1,140 @@
+.header-section {
+    min-height: 60px;
+}
+
+.header-section__menu-burger {
+    margin-left: auto;
+    
+    &--icon {
+        height: 40px;
+        width: 40px;
+    }
+}
+
+
+.header-section--line {
+    border-bottom: 1px solid #ececec;
+}
+
+.header-section__inner {
+    display: flex;
+    align-items: center;
+    min-height: 60px;
+}
+
+.navigation {
+    display: none;
+    color: var(--black-color);
+    font-size: 14px;
+    font-weight: 500;
+
+    @media screen and (min-width: 768px) {
+        display: block;
+    }
+}
+
+.menu {
+    display: flex;
+    padding-left: 93px;
+    
+}
+.menu__link {
+    position: relative;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: var(--link-color);
+    letter-spacing: calc(1em / 50);
+    display: inline-block;
+    padding: 32px 25px;
+
+    &--selected {
+            color: var(--hover-blue-color);
+    }
+
+    &:hover,
+    &:focus {
+        color: var(--hover-blue-color);
+    }
+    
+    
+    &::after {
+        border-radius: 2px;
+        content: '';
+        width: 0;
+        height: 4px;
+        right: 25px;
+        position: absolute;
+        bottom: 0;
+        background: var(--hover-blue-color);
+        transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1), height 850ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    &:hover::after {
+        width: calc(100% - 50px);
+        left: 25px;
+    }
+    
+    &:focus::after {
+        width: calc(100% - 50px);
+        left: 25px;
+    }
+
+    &--selected::after {
+            border-radius: 2px;
+            content: '';
+            width: calc(100% - 50px);
+            height: 4px;
+            left: 25px;
+            right: 25px;
+            position: absolute;
+            bottom: 0;
+            background: var(--hover-blue-color);
+    }
+}
+
+.contact {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    color: var(--gray-color);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: calc(1em / 50);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &--mail-top {
+        margin-left: auto;
+        padding-right: 25px;
+        align-items: center;
+        display: none;
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+        }
+    }
+
+    &--phone-top {
+        padding-left: 25px;
+        display: none;
+
+        @media screen and (min-width: 768px) {
+                display: flex;
+            }
+    }
+
+    &:hover {
+        color: var(--hover-blue-color);
+        /* color: #ff00d4; */
+    }
+
+    &:focus {
+        color: var(--hover-blue-color);
+    }
+}
+
+.contact__icon {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 10px;
+    fill: currentColor;
+    margin-right: 10px;
+}

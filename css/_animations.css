@@ -1,0 +1,22 @@
+@keyframes onHoverAnimation {
+    from {
+        visibility: hidden;
+        top: 100%;
+    }
+
+    to {
+        visibility:visible;
+        top: 0;
+    }
+}
+@keyframes outHoverAnimation {
+    from {
+        visibility: visible;
+        top: 0;
+    }
+
+    to {
+        visibility: hidden;
+        top: 100%;
+    }
+}

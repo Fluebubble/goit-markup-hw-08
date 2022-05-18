@@ -1,0 +1,65 @@
+/* Utils */
+@import url('utils/_visually-hidden.css');
+
+/* End Utils */
+/* Base */
+@import url('base/_normalise.css');
+@import url('base/_modern-normalize.css');
+@import url('/css/base/_base.css');
+@import url('_icon-styles.css');
+@import url('_animations.css');
+/* End Base */
+
+/* Components */
+@import url('components/_logo.css');
+@import url('components/_header.css');
+@import url('components/_cover.css');
+@import url('components/_employee.css');
+@import url('components/_footer.css');
+@import url('components/_modal.css');
+@import url('components/_clients.css');
+@import url('components/_benefits.css');
+@import url('components/_whatwedo.css');
+@import url('components/_our-team.css');
+@import url('components/_portfolio.css');
+@import url('components/_clients-section.css');
+/* End Components */
+
+:root {
+  --hover-blue-color: #2196f3;
+  --gray-color: #757575;
+  --white-color: #ffffff;
+  --hero-section-background: #2f303a;
+  --black-color: #000;
+  --link-color: #212121;
+  --footer__contact-color: rgba(255, 255, 255, 0.6);
+}
+
+
+
+
+/* Стили меню */
+
+/* Стили контактов в хеде */
+
+/* Секция 1 hero-section */
+
+/* Секция 2 Преимущества/benefits */
+
+/* Секция 3 Чем мы занимаемся/whatwedo-section 4 Наша команда */
+
+
+/* Our Team */
+
+
+/* Футер */
+
+/* Страница Portforlio */
+
+/* Permanent clients */
+
+
+/* Форма футера */
+
+
+/* Модальное окно */
