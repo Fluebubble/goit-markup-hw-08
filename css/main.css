@@ -358,6 +358,12 @@ body {
   text-align: center;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .logo {
   display: block;
   font-family: "Raleway";
@@ -381,6 +387,11 @@ body {
 
 .header-section__menu-burger {
   margin-left: auto;
+}
+@media screen and (min-width: 480px) {
+  .header-section__menu-burger {
+    display: none;
+  }
 }
 .header-section__menu-burger--icon {
   height: 40px;
@@ -506,10 +517,20 @@ body {
 }
 
 .hero-section {
-  background-image: url("../images/cover.jpg");
+  background-image: url("/images/main/header-mobile.jpg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: url("/images/main/header-mobile@2x.jpg");
+  }
+}
+@media screen and (min-width: 480px) {
+  .hero-section {
+    background-image: url("/images/main/header-tablet.jpg");
+  }
 }
 
 .hero-section__cover {
@@ -517,22 +538,32 @@ body {
 }
 
 .hero-section__inner {
-  padding: 200px 0;
+  padding: 118px 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .hero-section__inner {
+    padding: 200px 0;
+  }
 }
 
 .hero-section__title {
   text-align: center;
   color: var(--white-color);
   text-transform: uppercase;
-  font-size: 44px;
+  font-size: 26px;
   font-weight: 900;
   line-height: 1.36;
   letter-spacing: 0.06000024em;
   max-width: 696px;
+}
+@media screen and (min-width: 1200px) {
+  .hero-section__title {
+    font-size: 44px;
+  }
 }
 
 .hero-section__button {
@@ -599,6 +630,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  flex-wrap: wrap;
   max-width: 100%;
 }
 
@@ -617,6 +649,11 @@ body {
 
 .benefits-list__item {
   max-width: 270px;
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .benefits-list__item {
+    max-width: 354px;
+  }
 }
 
 .benefits-list__title {

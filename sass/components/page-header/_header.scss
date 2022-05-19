@@ -4,7 +4,12 @@
 
 .header-section__menu-burger {
     margin-left: auto;
+    // display: inline-block;
     
+    @media screen and (min-width: 480px) {
+        display: none;        
+    }
+
     &--icon {
         height: 40px;
         width: 40px;
