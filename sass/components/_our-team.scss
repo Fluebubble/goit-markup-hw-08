@@ -11,9 +11,12 @@
     margin-top: 50px;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .our-team-section__item {
+
+    margin-bottom: 30px;
 
    &--visual {
         padding-bottom: 30px;
@@ -23,7 +26,15 @@
             0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0 0 4px 4px;
     }
-   &:not(:last-child) {
-        margin-right: 30px;
+
+    @media screen and (min-width: 1200px) {
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
     }
+
+}
+
+.our-team-section__img {
+    width: 100%;
 }

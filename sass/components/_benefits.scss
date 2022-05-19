@@ -28,14 +28,15 @@
 }
 
 .benefits-list__item {
-    max-width: 270px;
-
+    max-width: 100%;
+    margin-bottom: 30px;
     // &:not(:last-child) {
     //     margin-right: 30px;
     // }
     
     @media screen and (min-width: 768px) and (max-width: 1200px) {
-        max-width: 354px;
+        max-width: calc(100%/2 - 2*30px);
+        min-width: 354px;
     }
 }
 
