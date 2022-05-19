@@ -5,19 +5,27 @@
 .clients-section__list {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .clients-section__item {
     border: #AFB1B8 solid 1px;
-    margin-top: 50px;
+    margin-top: 30px;
     border-radius: 4px;
+    width: calc(100%/2 - 30px);
+
+    &:nth-child(2n + 1) {
+        margin-right: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        &:not(:last-child) {
+            margin-right: 30px;
+        }        
+    }
 
     &:focus-within {
             border-color: #2196f3;
-    }
-
-    &:not(:last-child) {
-        margin-right: 30px;
     }
 
     &:hover {
@@ -34,7 +42,8 @@
 }
 
 .clients-section__link {
-    display: block;
+    display: flex;
+    justify-content: center;
 
     &:hover>.clients-section__icon {
             fill: #2196F3;
