@@ -426,6 +426,9 @@ img {
   height: 40px;
   width: 40px;
 }
+.header-section__menu-burger:hover, .header-section__menu-burger:focus {
+  fill: #2196f3;
+}
 
 .header-section--line {
   border-bottom: 1px solid #ececec;
