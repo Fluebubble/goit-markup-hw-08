@@ -1,12 +1,23 @@
 .header-section {
+    z-index: 20;
     min-height: 60px;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: #fff;
+    
+    @media screen and (max-width: 480px) {
+        position: fixed;
+    }
 }
 
 .header-section__menu-burger {
     margin-left: auto;
-    // display: inline-block;
+    background-color:inherit;
+    border: 0px;
+    padding: 0;
     
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 769px) {
         display: none;        
     }
 
@@ -25,6 +36,10 @@
     display: flex;
     align-items: center;
     min-height: 60px;
+
+    @media screen and (min-width: 768px) {
+        justify-content: space-between;
+    }
 }
 
 .navigation {
@@ -33,15 +48,26 @@
     font-size: 14px;
     font-weight: 500;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 769px) {
         display: block;
     }
+    
+    // @media screen and (min-width: 481px) and (max-width: 1199px) {
+    //     display: block;
+    // }
+    
 }
 
 .menu {
     display: flex;
-    padding-left: 93px;
+
+    @media screen and (min-width: 769px) {
+        // margin-left: 93px;
+    }
     
+    @media screen and (min-width: 1200px) {
+        margin-left: 93px;
+    }
 }
 .menu__link {
     position: relative;
@@ -96,6 +122,22 @@
     }
 }
 
+.contact-container {
+    display: none;
+
+    @media screen and (min-width: 769px) {
+            display: flex;
+            flex-direction: column;
+            // margin-left: auto;
+        }
+
+    @media screen and (min-width: 1200px) {
+            margin-left: auto;
+            display: flex;
+            flex-direction: row;
+        }
+}
+
 .contact {
     display: flex;
     /* justify-content: center; */
@@ -108,22 +150,29 @@
 
     &--mail-top {
         margin-left: auto;
-        padding-right: 25px;
         align-items: center;
-        display: none;
+        display: flex;
 
-        @media screen and (min-width: 768px) {
-            display: flex;
+        @media screen and (min-width: 481px) {
+            
+        }
+
+        @media screen and (min-width: 1200px) {
+            margin-right: 15px;
         }
     }
 
     &--phone-top {
-        padding-left: 25px;
-        display: none;
+        display: flex;
+        white-space: nowrap;
 
-        @media screen and (min-width: 768px) {
-                display: flex;
-            }
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            margin-top: 10px;
+        }
+        
+        @media screen and (min-width: 1200px) {
+            margin-left: 15px;
+        }
     }
 
     &:hover {

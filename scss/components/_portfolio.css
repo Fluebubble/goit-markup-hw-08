@@ -3,16 +3,16 @@
 
 }
 
-.portfolio-type {
+.portfolio-menu {
     display: flex;
     justify-content: center;
 }
 
-.portfolio-type-inner {
+.portfolio-menu-inner {
     /* margin-top: 94px; */
 }
 
-.portfolio-type__item:not(:last-child) {
+.portfolio-menu__item:not(:last-child) {
     padding-right: 8px;
 }
 

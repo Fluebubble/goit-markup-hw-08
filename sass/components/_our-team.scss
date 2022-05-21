@@ -1,6 +1,10 @@
 .our-team-section {
     background-color: #f5f4fa;
-    padding: 94px 0;
+    padding: 60px 0 30px;
+    
+    @media screen and (min-width: 759px) {
+            padding: 94px 0;
+    }
 }
 
 .our-team-section__inner {
@@ -10,7 +14,7 @@
 .our-team-section__list {
     margin-top: 50px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
@@ -25,6 +29,14 @@
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
             0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0 0 4px 4px;
+    }
+
+    @media screen and (min-width: 481px) {
+        width: calc(50% - 15px);
+    }
+
+    @media screen and (min-width: 769px) {
+        width: calc(25% - 30px);
     }
 
     @media screen and (min-width: 1200px) {

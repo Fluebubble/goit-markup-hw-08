@@ -39,40 +39,57 @@
               </li>
             </ul>
           </nav>
-          <a class="contact contact--mail-top" href="mailto:info@devstudio.com">
-            <svg class="contact__icon">
-              <use href="images/svg/sprite.svg#mail"></use>
+          <div class="contact-container">
+            <a
+              class="contact contact--mail-top"
+              href="mailto:info@devstudio.com"
+            >
+              <svg class="contact__icon">
+                <use href="images/svg/sprite.svg#mail"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+            <a class="contact contact--phone-top" href="tel:+380961111111">
+              <svg class="contact__icon">
+                <use href="images/svg/sprite.svg#phone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </div>
+          <button mobile-menu-open class="header-section__menu-burger">
+            <svg class="header-section__menu-burger--icon">
+              <use href="images/svg/sprite.svg#menu-burger"></use>
             </svg>
-            info@devstudio.com</a
-          >
-          <a class="contact contact--phone-top" href="tel:+380961111111">
-            <svg class="contact__icon">
-              <use href="images/svg/sprite.svg#phone"></use>
-            </svg>
-            +38 096 111 11 11</a
-          >
+          </button>
         </div>
       </div>
     </header>
-    <!-- <div class="header-line"></div> -->
     <main>
       <section class="portfolio-section">
         <div class="padding-container padding-container--portfolio">
-          <ul class="portfolio-type">
-            <li class="portfolio-type__item">
-              <button type="button">Все</button>
+          <ul class="portfolio-menu">
+            <li class="portfolio-menu__item">
+              <button type="button" class="portfolio-menu__button">Все</button>
             </li>
-            <li class="portfolio-type__item">
-              <button type="button">Веб-сайты</button>
+            <li class="portfolio-menu__item">
+              <button type="button" class="portfolio-menu__button">
+                Веб-сайты
+              </button>
             </li>
-            <li class="portfolio-type__item">
-              <button type="button">Приложения</button>
+            <li class="portfolio-menu__item">
+              <button type="button" class="portfolio-menu__button">
+                Приложения
+              </button>
             </li>
-            <li class="portfolio-type__item">
-              <button type="button">Дизайн</button>
+            <li class="portfolio-menu__item">
+              <button type="button" class="portfolio-menu__button">
+                Дизайн
+              </button>
             </li>
-            <li class="portfolio-type__item">
-              <button type="button">Маркетинг</button>
+            <li class="portfolio-menu__item">
+              <button type="button" class="portfolio-menu__button">
+                Маркетинг
+              </button>
             </li>
           </ul>
           <ul class="portfolio-list">
@@ -88,8 +105,13 @@
                     </p>
                   </div>
                   <img
+                    srcset="
+                      ./images/portfolio/img.jpg    1x,
+                      ./images/portfolio/img@x2.jpg 2x
+                    "
                     src="./images/portfolio/img.jpg"
                     alt="Веб-сайт технокряк"
+                    class="portfolio-list__img"
                   />
                 </div>
                 <div class="portfolio-list__text">
@@ -105,8 +127,13 @@
                     <p>Баскетболист нюхает локоть, но хочет подмышку</p>
                   </div>
                   <img
+                    srcset="
+                      ./images/portfolio/img-1.jpg    1x,
+                      ./images/portfolio/img-1@x2.jpg 2x
+                    "
                     src="./images/portfolio/img-1.jpg"
                     alt="Постер New Orlean vs Golden Star"
+                    class="portfolio-list__img"
                   />
                 </div>
                 <div class="portfolio-list__text">
@@ -124,8 +151,13 @@
                     <p>Рыба с лицом, ожидающим реакцию на свою шутку</p>
                   </div>
                   <img
+                    srcset="
+                      ./images/portfolio/img-2.jpg    1x,
+                      ./images/portfolio/img-2@x2.jpg 2x
+                    "
                     src="./images/portfolio/img-2.jpg"
                     alt="Приложение ресторана Seafood"
+                    class="portfolio-list__img"
                   />
                 </div>
                 <div class="portfolio-list__text">
@@ -140,7 +172,15 @@
                   <div class="portfolio-list__info">
                     <p>Беспонтовые наушники за дорого</p>
                   </div>
-                  <img src="./images/portfolio/img-3.jpg" alt="Наушники" />
+                  <img
+                    srcset="
+                      ./images/portfolio/img-3.jpg    1x,
+                      ./images/portfolio/img-3@x2.jpg 2x
+                    "
+                    src="./images/portfolio/img-3.jpg"
+                    alt="Наушники"
+                    class="portfolio-list__img"
+                  />
                 </div>
                 <div class="portfolio-list__text">
                   <p class="portfolio-list__name">Проект Prime</p>
@@ -154,7 +194,15 @@
                   <div class="portfolio-list__info">
                     <p>Коробки со шмалью</p>
                   </div>
-                  <img src="./images/portfolio/img-4.jpg" alt="Коробки" />
+                  <img
+                    srcset="
+                      ./images/portfolio/img-4.jpg    1x,
+                      ./images/portfolio/img-4@x2.jpg 2x
+                    "
+                    src="./images/portfolio/img-4.jpg"
+                    alt="Коробки"
+                    class="portfolio-list__img"
+                  />
                 </div>
                 <div class="portfolio-list__text">
                   <p class="portfolio-list__name">Проект Boxes</p>
@@ -168,7 +216,15 @@
                   <div class="portfolio-list__info">
                     <p>Какой-то сайт, к сожалению не порнхаб.</p>
                   </div>
-                  <img src="./images/portfolio/img-5.jpg" alt="Веб-сайт" />
+                  <img
+                    srcset="
+                      ./images/portfolio/img-5.jpg    1x,
+                      ./images/portfolio/img-5@x2.jpg 2x
+                    "
+                    src="./images/portfolio/img-5.jpg"
+                    alt="Веб-сайт"
+                    class="portfolio-list__img"
+                  />
                 </div>
                 <div class="portfolio-list__text">
                   <p class="portfolio-list__name">Inspiration has no Borders</p>
@@ -183,8 +239,13 @@
                     <p>Самый читаемый журнал для посиделок на толчке</p>
                   </div>
                   <img
+                    srcset="
+                      ./images/portfolio/img-6.jpg    1x,
+                      ./images/portfolio/img-6@x2.jpg 2x
+                    "
                     src="./images/portfolio/img-6.jpg"
                     alt="Дизайн журнала Limited Edition"
+                    class="portfolio-list__img"
                   />
                 </div>
                 <div class="portfolio-list__text">
@@ -200,8 +261,13 @@
                     <p>Беспонтовая бирка</p>
                   </div>
                   <img
+                    srcset="
+                      ./images/portfolio/img-7.jpg    1x,
+                      ./images/portfolio/img-7@x2.jpg 2x
+                    "
                     src="./images/portfolio/img-7.jpg"
                     alt="Веб-сайт технокряк"
+                    class="portfolio-list__img"
                   />
                 </div>
                 <div class="portfolio-list__text">
@@ -220,8 +286,13 @@
                     </p>
                   </div>
                   <img
+                    srcset="
+                      ./images/portfolio/img-8.jpg    1x,
+                      ./images/portfolio/img-8@x2.jpg 2x
+                    "
                     src="./images/portfolio/img-8.jpg"
                     alt="Приложение Growing Business"
+                    class="portfolio-list__img"
                   />
                 </div>
                 <div class="portfolio-list__text">
@@ -292,6 +363,7 @@
               </li>
             </ul>
           </div>
+
           <div class="bottom-form">
             <p class="footer__socials-header">Подпишитесь на рассылку</p>
             <form
@@ -316,5 +388,42 @@
         </div>
       </div>
     </footer>
+    <div mobile-menu class="mobile-menu is-hidden">
+      <button type="button" class="mobile-menu__close-button" mobile-menu-close>
+        <svg class="mobile-menu__close-button--img">
+          <use href="/images/svg/sprite.svg#menu-close"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu__list">
+        <li class="mobile-menu__item">
+          <a href="index.html" class="mobile-menu__link">Студия</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a
+            href="portfolio.html"
+            class="mobile-menu__link mobile-menu__link--selected"
+            >Портфолио</a
+          >
+        </li>
+        <li class="mobile-menu__item">
+          <a href="#" class="mobile-menu__link">Контакты</a>
+        </li>
+      </ul>
+      <div class="mobile-menu__contacts">
+        <a href="tel:+380961111111" class="mobile-menu__phone"
+          >+38 096 111 11 11</a
+        >
+        <a href="mailto:info@devstudio.com" class="mobile-menu__mail"
+          >info@devstudio.com</a
+        >
+      </div>
+      <div class="mobile-menu__socials">
+        <a href="#" class="mobile-menu__social-link">Instagram</a>
+        <a href="#" class="mobile-menu__social-link">Twitter</a>
+        <a href="#" class="mobile-menu__social-link">Facebook</a>
+        <a href="#" class="mobile-menu__social-link">LinkedIn</a>
+      </div>
+    </div>
+    <script src="js/mobile-menu-opener.js"></script>
   </body>
 </html>

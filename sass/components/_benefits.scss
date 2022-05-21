@@ -1,9 +1,13 @@
 .benefits-section {
-    padding-top: 94px;
+    padding-top: 60px;
     color: var(--gray-color);
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: calc(1em / 33);
+
+    @media screen and (min-width: 759px) {
+            padding-top: 94px 0;
+    }
 }
 
 .benefits-list {
@@ -34,9 +38,14 @@
     //     margin-right: 30px;
     // }
     
-    @media screen and (min-width: 768px) and (max-width: 1200px) {
-        max-width: calc(100%/2 - 2*30px);
-        min-width: 354px;
+    @media screen and (min-width: 481px) {
+    //    max-width: calc(100%/2 - 2*30px);
+        width: calc(100%/2 - 15px);
+    }
+
+    @media screen and (min-width: 768px) {
+    //    max-width: calc(100%/2 - 2*30px);
+        width: calc(100%/4 - 30px);
     }
 }
 

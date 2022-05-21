@@ -39,23 +39,25 @@
               </li>
             </ul>
           </nav>
-          <a class="contact contact--mail-top" href="mailto:info@devstudio.com">
-            <svg class="contact__icon">
-              <use href="images/svg/sprite.svg#mail"></use>
-            </svg>
-            info@devstudio.com</a
-          >
-          <a class="contact contact--phone-top" href="tel:+380961111111">
-            <svg class="contact__icon">
-              <use href="images/svg/sprite.svg#phone"></use>
-            </svg>
-            +38 096 111 11 11</a
-          >
-          <a class="header-section__menu-burger" href="#">
+          <div class="contact-container">
+            <a class="contact contact--mail-top" href="mailto:info@devstudio.com">
+              <svg class="contact__icon">
+                <use href="images/svg/sprite.svg#mail"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+            <a class="contact contact--phone-top" href="tel:+380961111111">
+              <svg class="contact__icon">
+                <use href="images/svg/sprite.svg#phone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </div>
+          <button mobile-menu-open class="header-section__menu-burger">
             <svg class="header-section__menu-burger--icon">
               <use href="images/svg/sprite.svg#menu-burger"></use>
             </svg>
-          </a>
+          </button>
         </div>
       </div>
     </header>
@@ -142,6 +144,7 @@
             <ul class="whatwedo-section__list">
               <li class="whatwedo-section__item">
                 <img
+                  srcset="images/box1.jpg 1x, images/box1@x2.jpg 2x"
                   src="images/box1.jpg"
                   alt="Человек за компьютером пишущий код"
                   width="370"
@@ -149,6 +152,7 @@
               </li>
               <li class="whatwedo-section__item">
                 <img
+                  srcset="images/box2.jpg 1x, images/box2@x2.jpg 2x"
                   src="images/box2.jpg"
                   alt="Человек за компьютером создающий дизайн приложения"
                   width="370"
@@ -156,6 +160,7 @@
               </li>
               <li class="whatwedo-section__item">
                 <img
+                  srcset="images/box3.jpg 1x, images/box3@x2.jpg 2x"
                   src="images/box3.jpg"
                   alt="Цветовая палтира на планшете"
                   width="370"
@@ -173,7 +178,8 @@
             <ul class="our-team-section__list">
               <li class="our-team-section__item our-team-section__item--visual">
                 <img
-                  src="images/employee1.jpg"
+                  srcset="images/employee/employee1.jpg 1x, images/employee/employee1@x2.jpg 2x"
+                  src="images/employee/employee1.jpg"
                   alt="Продуктовый дизайнер Игорь Демьяненко"
                   class="our-team-section__img"
                 />
@@ -212,7 +218,8 @@
               </li>
               <li class="our-team-section__item our-team-section__item--visual">
                 <img
-                  src="images/employee2.jpg"
+                 srcset="images/employee/employee2.jpg 1x, images/employee/employee2@x2.jpg 2x"
+                  src="images/employee/employee2.jpg"
                   alt="Front-end разработчик Ольга Репина"
                   class="our-team-section__img"
                 />
@@ -251,7 +258,8 @@
               </li>
               <li class="our-team-section__item our-team-section__item--visual">
                 <img
-                  src="images/employee3.jpg"
+                  srcset="images/employee/employee3.jpg 1x, images/employee/employee3@x2.jpg 2x"
+                  src="images/employee/employee3.jpg"
                   alt="Маркетинг специалист Николай Тарасов"
                   class="our-team-section__img"
                 />
@@ -290,7 +298,8 @@
               </li>
               <li class="our-team-section__item our-team-section__item--visual">
                 <img
-                  src="images/employee4.jpg"
+                  srcset="images/employee/employee4.jpg 1x, images/employee/employee4@x2.jpg 2x"
+                  src="images/employee/employee4.jpg"
                   alt="UI-дизайнер Михаил Ермаков"
                   class="our-team-section__img"
                 />
@@ -441,28 +450,29 @@
               </li>
             </ul>
           </div>
+          
           <div class="bottom-form">
-            <p class="footer__socials-header">Подпишитесь на рассылку</p>
-            <form
-              action="#"
-              class="subscribe-form"
-              autocomplete="off"
-              novalidate
-            >
-              <input
-                type="email"
-                class="subscribe-form__input"
-                placeholder="E-mail"
-              />
-              <button class="subscribe-form__button" type="submit">
-                Подписаться
-                <svg class="subscribe-form__icon">
-                  <use href="images/svg/formhw/hw6-sprite.svg#send"></use>
-                </svg>
-              </button>
-            </form>
-          </div>
+              <p class="footer__socials-header">Подпишитесь на рассылку</p>
+              <form
+                action="#"
+                class="subscribe-form"
+                autocomplete="off"
+                novalidate
+              >
+                <input
+                  type="email"
+                  class="subscribe-form__input"
+                  placeholder="E-mail"
+                />
+                <button class="subscribe-form__button" type="submit">
+                  Подписаться
+                  <svg class="subscribe-form__icon">
+                    <use href="images/svg/formhw/hw6-sprite.svg#send"></use>
+                  </svg>
+                </button>
+              </form>
         </div>
+          </div>
       </div>
     </footer>
     <div class="modal is-hidden" data-modal>
@@ -521,6 +531,35 @@
         </form>
       </div>
     </div>
-    <script src="js/modal.js"></script> -->
+    <div mobile-menu class="mobile-menu is-hidden" >
+      <button type="button" class="mobile-menu__close-button" mobile-menu-close>
+        <svg class="mobile-menu__close-button--img">
+          <use href="/images/svg/sprite.svg#menu-close"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu__list">
+        <li class="mobile-menu__item">
+          <a href="index.html" class="mobile-menu__link mobile-menu__link--selected">Студия</a>
+        </li>
+        <li class="mobile-menu__item">
+           <a href="portfolio.html" class="mobile-menu__link">Портфолио</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="#" class="mobile-menu__link">Контакты</a>
+        </li>
+      </ul>
+      <div class="mobile-menu__contacts">
+        <a href="tel:+380961111111" class="mobile-menu__phone">+38 096 111 11 11</a>
+        <a href="mailto:info@devstudio.com" class="mobile-menu__mail">info@devstudio.com</a>
+      </div>
+      <div class="mobile-menu__socials">
+        <a href="#" class="mobile-menu__social-link">Instagram</a>
+        <a href="#" class="mobile-menu__social-link">Twitter</a>
+        <a href="#" class="mobile-menu__social-link">Facebook</a>
+        <a href="#" class="mobile-menu__social-link">LinkedIn</a>
+      </div>
+    </div>
+    <script src="js/modal.js"></script>
+    <script src="js/mobile-menu-opener.js"></script>
   </body>
 </html>

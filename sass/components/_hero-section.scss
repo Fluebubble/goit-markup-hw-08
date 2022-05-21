@@ -4,14 +4,35 @@
     background-repeat: no-repeat;
     background-size: cover;
 
+    @media screen and (max-width: 480px) {
+        margin-top: 60px;
+    } 
+    
+
     @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
             background-image: url('/images/main/header-mobile@2x.jpg');
         }
-
-    @media screen and (min-width: 480px) {
+        
+    @media screen and (min-width: 481px) {
         background-image: url('/images/main/header-tablet.jpg');
+        
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url('/images/main/header-tablet@2x.jpg');
+            }
+    }
+
+    @media screen and (min-width: 1200px) {
+        background-image: url('/images/main/header-pc.jpg');
+        
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url('/images/main/header-pc@x2.jpg');
+            }
     }
 }
 
@@ -26,7 +47,11 @@
     justify-content: center;
     align-items: center;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 481px) {
+        padding: 118px 174px;
+    }
+
+    @media screen and (min-width: 769px) {
         padding: 200px 0;
     }
 }
@@ -42,7 +67,7 @@
     letter-spacing: calc(1em / 16.6666);
     max-width: 696px;
     
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 769px) {
         font-size: 44px;
     }
 
