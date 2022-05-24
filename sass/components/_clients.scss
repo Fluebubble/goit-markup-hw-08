@@ -10,23 +10,27 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 50px;
+    }
+
 }
 
 .clients-section__item {
     border: #AFB1B8 solid 1px;
-    margin-top: 30px;
     border-radius: 4px;
     width: calc(100%/2 - 15px);
 
-    // &:nth-child(2n + 1) {
-    //     margin-right: 30px;
-    // }
-
-    @media screen and (min-width: 481px) {
+    @media screen and (max-width: 1199px) {
+        margin-top: 30px;
+    }
+    
+    @media screen and (min-width: 480px) {
         width: calc(33% - 15px);
     }
 
-    @media screen and (min-width: 769px) {
+    @media screen and (min-width: 768px) {
         width: calc(16% - 15px);
     }
 

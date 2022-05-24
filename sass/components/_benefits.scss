@@ -47,6 +47,11 @@
     //    max-width: calc(100%/2 - 2*30px);
         width: calc(100%/4 - 30px);
     }
+
+    @media screen and (min-width: 1200px) {
+    //    max-width: calc(100%/2 - 2*30px);
+        width: calc(270px);
+    }
 }
 
 .benefits-list__title {
