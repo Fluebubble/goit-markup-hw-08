@@ -26,11 +26,11 @@
         margin-top: 30px;
     }
     
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 768px) {
         width: calc(33% - 15px);
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1200px) {
         width: calc(16% - 15px);
     }
 
