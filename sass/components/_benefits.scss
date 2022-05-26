@@ -5,7 +5,11 @@
     line-height: 1.71;
     letter-spacing: calc(1em / 33);
 
-    @media screen and (min-width: 769px) {
+    @media screen and (min-width: 768px) {
+            padding-bottom: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
             padding-top: 94px;
     }
 }

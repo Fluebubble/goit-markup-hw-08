@@ -47,8 +47,8 @@
     justify-content: center;
     align-items: center;
 
-    @media screen and (min-width: 480px) {
-        // padding: 118px 174px;
+    @media screen and (min-width: 768px) {
+        padding: 118px 174px;
     }
 
     @media screen and (min-width: 1200px) {
@@ -67,7 +67,7 @@
     letter-spacing: calc(1em / 16.6666);
     max-width: 696px;
     
-    @media screen and (min-width: 769px) {
+    @media screen and (min-width: 1200px) {
         font-size: 44px;
     }
 
